@@ -20,8 +20,8 @@ Implementation using Python code
 Testing the server and client 
 
 ## PROGRAM:
+## SERVER.py:
 ```python
-SERVER.py:
 
 import socket
 
@@ -41,11 +41,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             if not data:
                 break
             conn.sendall(data)
- 
- 
- CLIENT.py
- 
- import socket
+ ```
+
+## CLIENT.py
+ ```python
+
+import socket
 
 
 HOST = "127.0.0.1"  # The server's hostname or IP address
